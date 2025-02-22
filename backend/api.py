@@ -1,11 +1,14 @@
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 from uuid import uuid4
+import json
+from openai import OpenAI
+from recommendations import recommend_courses
+import json
 from profile import ProfileBuilder
 
 app = Flask(__name__)
 
-# Enable CORS for all routes
 CORS(app, 
      supports_credentials=True,
      resources={r"/*": {"origins": "*"}})
@@ -13,13 +16,24 @@ CORS(app,
 # Add CORS headers to all responses
 @app.after_request
 def after_request(response):
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    origin = request.headers.get("Origin")
+    if origin:
+        response.headers["Access-Control-Allow-Origin"] = origin
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type,Authorization"
+    response.headers["Access-Control-Allow-Methods"] = "GET,PUT,POST,DELETE,OPTIONS"
     return response
 
 # Store ProfileBuilder instances and conversation history
 sessions = {}
+
+def handle_options():
+    """Handles CORS preflight requests."""
+    response = make_response()
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Headers", "Content-Type,Authorization")
+    response.headers.add("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS")
+    return response
+
 
 @app.route('/start-conversation', methods=['POST', 'OPTIONS'])
 def start_conversation():
@@ -90,10 +104,32 @@ def continue_conversation():
             "completed": False
         })
     else:
-        return jsonify({
+        return jsonify({    
             "profile": ai_response['profile'],
             "completed": True
         })
+
+@app.route('/recommend-courses', methods=['POST', 'OPTIONS'])
+def recommend_courses_api():
+    if request.method == 'OPTIONS':
+        return handle_options()
+    
+    data = request.json
+    if not data or "data" not in data:
+        return jsonify({"error": "Invalid input data"}), 400
+
+    # Load JSON Data
+    with open('data/country-university-dataset.json', 'r') as f:
+        country_university_data = json.load(f)
+    print("done here")
+    with open('data/university-course-dataset.json', 'r') as f:
+        university_course_data = json.load(f)
+    print("done here too")
+    # Call the recommend_courses function
+    recommendations = recommend_courses(data, country_university_data, university_course_data)
+    print(recommendations)
+    return jsonify({"recommendations": recommendations})
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001, host='0.0.0.0')

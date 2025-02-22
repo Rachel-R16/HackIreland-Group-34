@@ -1,8 +1,12 @@
 import os
-from openai import OpenAI
+import openai
 from typing import Dict, Optional
+from dotenv import load_dotenv
 
-client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+load_dotenv()
+OPENAI_API_KEY = os.getenv("API_KEY")
+
+client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 SYSTEM_PROMPT = '''You are a friendly educational advisor helping students plan their studies abroad. Have a natural conversation to gather the following information:
 
@@ -60,7 +64,7 @@ class ProfileBuilder:
             messages.append({"role": role, "content": message})
             
         response = client.chat.completions.create(
-            model="gpt-4-turbo-preview",
+            model="gpt-4o",
             response_format={"type": "json_object"},
             messages=messages
         )
