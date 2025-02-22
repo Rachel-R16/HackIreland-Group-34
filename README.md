@@ -36,9 +36,9 @@ Start the Flask server:
 python api.py
 ```
 
-The API will be available at http://localhost:5000
+The API will be available at http://localhost:5001
 
 Test the endpoint:
 ```bash
-curl http://localhost:5000/api/test
+curl http://localhost:5001/api/test
 ```
