@@ -76,10 +76,10 @@ if __name__ == "__main__":
         find_university_prompts.append(f"List top 20 universities in '{country}'")
 
     dataset = generate_data(find_university_prompts)
-    save_to_json(dataset, "data/country-university-dataset.json")
+    save_to_json(dataset, "../data/country-university-dataset.json")
 
     find_course_prompts = []
-    with open("data/country-university-dataset.json", "r", encoding="utf-8") as file:
+    with open("../data/country-university-dataset.json", "r", encoding="utf-8") as file:
         country_university_data = json.load(file)
     
     for country_entry in country_university_data:
@@ -88,6 +88,6 @@ if __name__ == "__main__":
                 find_course_prompts.append(f"List all undergraduate courses probably offered at '{university}' in a numbered format. Only provide the list, without any extra text or explanation.")
 
     dataset = generate_data(find_course_prompts)
-    save_to_json(dataset, "data/university-course-dataset.json")
+    save_to_json(dataset, "../data/university-course-dataset.json")
 
     print("Dataset saved successfully!")
