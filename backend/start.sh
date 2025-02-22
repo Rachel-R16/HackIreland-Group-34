@@ -1,13 +1,18 @@
 #!/bin/bash
 
+echo "Setting up environment variables..."
+export FLASK_APP=wsgi.py
+export FLASK_ENV=development
+export FLASK_DEBUG=1
+export PYTHONUNBUFFERED=1
+
 echo "Stopping any existing Flask processes..."
 pkill -f "flask run" || true
 
-echo "Setting up environment variables..."
-export FLASK_APP=api
-export FLASK_ENV=development
-export FLASK_DEBUG=1
-export PYTHONUNBUFFERED=1  # This ensures Python output isn't buffered
+echo "Installing requirements if needed..."
+if [ -f "requirements.txt" ]; then
+    pip install -r requirements.txt
+fi
 
-echo "Starting Flask server on port 5001..."
-flask run --port 5001 --debug --host=0.0.0.0
+echo "Starting Flask server..."
+python wsgi.py
