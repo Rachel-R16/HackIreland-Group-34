@@ -20,14 +20,15 @@ def query_llm(prompt):
     )
     return response.choices[0].message.content  # Updated response handling
 
-def extract_universities(country, text):
+def extract_vals(valid_key, text):
     lines = text.split("\n")
     result = []
     for line in lines:
-        if line.lstrip().startswith(tuple(f"{i}. " for i in range(1, 51))):  # Check for "1. ", "2. ", ..., "50. "
+        if line.lstrip().startswith(tuple(f"{i}. " for i in range(1, 21))):  # Check for "1. ", "2. ", ..., "50. "
             result.append(line.strip()[3:].lstrip(" ").strip("*"))
     print(result)
-    return {country: result}
+    return {valid_key: result}
+
 
 def generate_data(prompts):
     dataset = []
@@ -36,11 +37,12 @@ def generate_data(prompts):
         response = query_llm(prompt)
         start = prompt.find("'") + 1
         end = prompt.rfind("'")
-        country = prompt[start:end]
-        country_university_dict = extract_universities(country, response)
-        dataset.append(country_university_dict)
+        valid_key = prompt[start:end]
+        info_dict = extract_vals(valid_key, response)
+        dataset.append(info_dict)
 
     return dataset
+
 
 def save_to_json(dataset, path):
     """Save dataset to JSON, handling empty or corrupted files."""
@@ -62,20 +64,30 @@ def save_to_json(dataset, path):
         json.dump(dataset, f, indent=4)
 
     print(f"Data successfully saved to {path}")
-    
+
+
 
 if __name__ == "__main__":
 
-    prompts = []
-    countries = [ "Australia", "USA", "Canada", "Ireland", "UK"]
+    find_university_prompts = []
+    countries = ["Australia", "USA", "Canada", "Ireland", "UK"]
 
-    for i in countries:
-        prompts.append(f"List top 50 universities in '{i}'. Use only the English translation of the university names.")
+    for country in countries:
+        find_university_prompts.append(f"List top 20 universities in '{country}'")
 
-    dataset = generate_data(prompts)
-    os.makedirs("data", exist_ok=True)  # Ensure 'data/' folder exists
+    dataset = generate_data(find_university_prompts)
+    save_to_json(dataset, "data/country-university-dataset.json")
 
-    # Save dataset in JSON & CSV format
-    save_to_json(dataset, "data/dataset.json")
+    find_course_prompts = []
+    with open("data/country-university-dataset.json", "r", encoding="utf-8") as file:
+        country_university_data = json.load(file)
+    
+    for country_entry in country_university_data:
+        for country, universities in country_entry.items():
+            for university in universities:
+                find_course_prompts.append(f"List all undergraduate courses probably offered at '{university}' in a numbered format. Only provide the list, without any extra text or explanation.")
+
+    dataset = generate_data(find_course_prompts)
+    save_to_json(dataset, "data/university-course-dataset.json")
 
     print("Dataset saved successfully!")
