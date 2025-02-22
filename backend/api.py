@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 from uuid import uuid4
-from profile import generate_next_step
+from profile import ProfileBuilder
 
 app = Flask(__name__)
 
@@ -18,7 +18,8 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
     return response
 
-conversation_sessions = {}
+# Store ProfileBuilder instances and conversation history
+sessions = {}
 
 @app.route('/start-conversation', methods=['POST', 'OPTIONS'])
 def start_conversation():
@@ -31,12 +32,30 @@ def start_conversation():
         return response
         
     session_id = str(uuid4())
-    conversation_sessions[session_id] = []
-    # Start with first question
-    ai_response = generate_next_step([], session_id)
+    
+    # Create new session with ProfileBuilder and empty conversation
+    sessions[session_id] = {
+        'builder': ProfileBuilder(),
+        'conversation': []
+    }
+    
+    # Get initial message from the profile builder
+    session = sessions[session_id]
+    ai_response = session['builder'].process_conversation(session['conversation'])
+    
     if 'question' in ai_response:
-        conversation_sessions[session_id].append(f"AI: {ai_response['question']}")
-    return jsonify({"session_id": session_id, "response": ai_response})
+        session['conversation'].append(ai_response['question'])
+        return jsonify({
+            "session_id": session_id,
+            "message": ai_response['question'],
+            "completed": False
+        })
+    else:
+        return jsonify({
+            "session_id": session_id,
+            "profile": ai_response['profile'],
+            "completed": True
+        })
 
 @app.route('/continue-conversation', methods=['POST', 'OPTIONS'])
 def continue_conversation():
@@ -55,19 +74,26 @@ def continue_conversation():
     session_id = data['session_id']
     user_message = data.get('message', '')
     
-    if session_id not in conversation_sessions:
+    if session_id not in sessions:
         return jsonify({"error": "Invalid session ID"}), 400
     
-    conversation = conversation_sessions[session_id]
+    session = sessions[session_id]
     if user_message:
-        conversation.append(f"User: {user_message}")
+        session['conversation'].append(user_message)
     
-    ai_response = generate_next_step(conversation, session_id)
+    ai_response = session['builder'].process_conversation(session['conversation'])
     
     if 'question' in ai_response:
-        conversation.append(f"AI: {ai_response['question']}")
-    
-    return jsonify(ai_response)
+        session['conversation'].append(ai_response['question'])
+        return jsonify({
+            "message": ai_response['question'],
+            "completed": False
+        })
+    else:
+        return jsonify({
+            "profile": ai_response['profile'],
+            "completed": True
+        })
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001, host='0.0.0.0')

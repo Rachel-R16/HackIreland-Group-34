@@ -1,41 +1,42 @@
 import os
-import json
 from openai import OpenAI
 from typing import Dict, Optional
-from enum import Enum, auto
 
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
-class ProfileMetric(Enum):
-    ACADEMIC_SCORE = auto()
-    COUNTRIES = auto()
-    INTERESTS = auto()
-    BUDGET = auto()
+SYSTEM_PROMPT = '''You are a friendly educational advisor helping students plan their studies abroad. Have a natural conversation to gather the following information:
 
-METRIC_PROMPTS = {
-    ProfileMetric.ACADEMIC_SCORE: "What is your GPA or academic test scores?",
-    ProfileMetric.COUNTRIES: "Which countries are you interested in studying in?",
-    ProfileMetric.INTERESTS: "What academic subjects or areas interest you most?",
-    ProfileMetric.BUDGET: "What is your budget range per year for studying (minimum and maximum)?"
-}
+Required information to collect:
+- Academic score (GPA or test scores)
+- Preferred countries for study
+- Areas of academic interest
+- Budget range per year (min-max in USD)
 
-EXTRACTION_PROMPT = '''Extract the requested information from the conversation. If the information is not present or unclear, return null.
-Current metric: {metric}
+Guidelines:
+1. Be conversational and friendly
+2. Ask follow-up questions when answers are unclear
+3. Once you have all the information, return it as JSON
+4. Don't ask for all information at once - have a natural conversation
 
-Guidelines for extraction:
-- Academic Score: Return GPA (0-4.0 scale) or standardized test scores
-- Countries: Return list of countries
-- Interests: Return list of academic subjects/areas
-- Budget: Return object with min and max values in USD
+Current profile state:
+{profile}
 
-Return JSON in this format:
+Return ONLY JSON when you have all information. Format:
 {{
-    "value": extracted_value_or_null
+    "type": "profile",
+    "data": {{
+        "academic_score": value,
+        "preferred_countries": ["country1", "country2"],
+        "areas_of_interest": ["area1", "area2"],
+        "budget_range": {{"min": value, "max": value}}
+    }}
 }}
 
-Conversation:
-{conversation}
-'''
+Otherwise, return:
+{{
+    "type": "message",
+    "data": "Your next message to the user"
+}}'''
 
 class ProfileBuilder:
     def __init__(self):
@@ -45,58 +46,36 @@ class ProfileBuilder:
             "areas_of_interest": None,
             "budget_range": None
         }
-        self.current_metric = ProfileMetric.ACADEMIC_SCORE
-        self.metrics_order = list(ProfileMetric)
-        self.metric_index = 0
-
-    def get_next_question(self) -> str:
-        return METRIC_PROMPTS[self.current_metric]
-
-    def extract_metric_value(self, conversation: list[str]) -> Optional[any]:
-        formatted_prompt = EXTRACTION_PROMPT.format(
-            metric=self.current_metric.name,
-            conversation="\n".join(conversation)
-        )
         
+    def process_conversation(self, conversation: list[str]) -> Dict:
+        formatted_prompt = SYSTEM_PROMPT.format(profile=self.profile)
+        
+        messages = [
+            {"role": "system", "content": formatted_prompt}
+        ]
+        
+        # Add conversation history
+        for i, message in enumerate(conversation):
+            role = "assistant" if i % 2 == 0 else "user"
+            messages.append({"role": role, "content": message})
+            
         response = client.chat.completions.create(
             model="gpt-4-turbo-preview",
             response_format={"type": "json_object"},
-            messages=[
-                {"role": "system", "content": formatted_prompt}
-            ]
+            messages=messages
         )
         
         try:
-            result = json.loads(response.choices[0].message.content)
-            return result.get('value')
-        except Exception:
-            return None
-
-    def process_conversation(self, conversation: list[str]) -> Dict:
-        # Try to extract value for current metric
-        value = self.extract_metric_value(conversation)
-        
-        if value is not None:
-            # Store the value and move to next metric
-            if self.current_metric == ProfileMetric.ACADEMIC_SCORE:
-                self.profile["academic_score"] = value
-            elif self.current_metric == ProfileMetric.COUNTRIES:
-                self.profile["preferred_countries"] = value
-            elif self.current_metric == ProfileMetric.INTERESTS:
-                self.profile["areas_of_interest"] = value
-            elif self.current_metric == ProfileMetric.BUDGET:
-                self.profile["budget_range"] = value
+            result = response.choices[0].message.content
+            response_data = eval(result)  # Safe since we specified json_object format
             
-            # Move to next metric if available
-            self.metric_index += 1
-            if self.metric_index < len(self.metrics_order):
-                self.current_metric = self.metrics_order[self.metric_index]
-                return {"question": self.get_next_question()}
-            else:
+            if response_data["type"] == "profile":
+                self.profile = response_data["data"]
                 return {"profile": self.profile}
-        
-        # If value wasn't extracted, ask a follow-up question
-        return {"question": f"I still need to know {self.get_next_question()}"}
+            else:
+                return {"question": response_data["data"]}
+        except Exception as e:
+            return {"question": "I'm sorry, I had trouble processing that. Could you please repeat your last response?"}
 
 # Global dictionary to store profile builders for each session
 profile_builders = {}
