@@ -32,8 +32,8 @@ def start_conversation():
         
     session_id = str(uuid4())
     conversation_sessions[session_id] = []
-    # Start with AI greeting
-    ai_response = generate_next_step([])
+    # Start with first question
+    ai_response = generate_next_step([], session_id)
     if 'question' in ai_response:
         conversation_sessions[session_id].append(f"AI: {ai_response['question']}")
     return jsonify({"session_id": session_id, "response": ai_response})
@@ -62,7 +62,7 @@ def continue_conversation():
     if user_message:
         conversation.append(f"User: {user_message}")
     
-    ai_response = generate_next_step(conversation)
+    ai_response = generate_next_step(conversation, session_id)
     
     if 'question' in ai_response:
         conversation.append(f"AI: {ai_response['question']}")

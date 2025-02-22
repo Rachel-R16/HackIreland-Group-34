@@ -1,61 +1,110 @@
 import os
 import json
 from openai import OpenAI
-from typing import Dict
+from typing import Dict, Optional
+from enum import Enum, auto
 
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
-PROFILE_PROMPT = '''You are a friendly university advisor chatbot. Your task is to collect information about a student's profile through conversation. You need to gather:
+class ProfileMetric(Enum):
+    ACADEMIC_SCORE = auto()
+    COUNTRIES = auto()
+    INTERESTS = auto()
+    BUDGET = auto()
 
-1. Academic score (GPA/test scores)
-2. Preferred countries for study
-3. Academic interests/subjects
-4. Budget range (min/max per year)
+METRIC_PROMPTS = {
+    ProfileMetric.ACADEMIC_SCORE: "What is your GPA or academic test scores?",
+    ProfileMetric.COUNTRIES: "Which countries are you interested in studying in?",
+    ProfileMetric.INTERESTS: "What academic subjects or areas interest you most?",
+    ProfileMetric.BUDGET: "What is your budget range per year for studying (minimum and maximum)?"
+}
 
-Guidelines:
-- Ask ONE question at a time
-- Be conversational and friendly
-- Acknowledge information when provided
-- Move to next missing field once current is answered
-- When all info is collected, return complete profile
+EXTRACTION_PROMPT = '''Extract the requested information from the conversation. If the information is not present or unclear, return null.
+Current metric: {metric}
 
-Return JSON in exactly ONE of these formats:
-1. When information is missing:
+Guidelines for extraction:
+- Academic Score: Return GPA (0-4.0 scale) or standardized test scores
+- Countries: Return list of countries
+- Interests: Return list of academic subjects/areas
+- Budget: Return object with min and max values in USD
+
+Return JSON in this format:
 {{
-    "question": "your friendly question here"
+    "value": extracted_value_or_null
 }}
 
-2. When all information is collected:
-{{
-    "profile": {{
-        "academic_score": "value",
-        "preferred_countries": ["country1", "country2"],
-        "areas_of_interest": ["subject1", "subject2"],
-        "budget_range": {{"min": number, "max": number}}
-    }}
-}}
+Conversation:
+{conversation}
+'''
 
-Current conversation:
-{conversation}'''
+class ProfileBuilder:
+    def __init__(self):
+        self.profile = {
+            "academic_score": None,
+            "preferred_countries": None,
+            "areas_of_interest": None,
+            "budget_range": None
+        }
+        self.current_metric = ProfileMetric.ACADEMIC_SCORE
+        self.metrics_order = list(ProfileMetric)
+        self.metric_index = 0
 
-def generate_next_step(conversation: list[str]) -> Dict:
-    formatted_prompt = PROFILE_PROMPT.format(
-        conversation="\n".join(conversation) if conversation else "No messages yet."
-    )
+    def get_next_question(self) -> str:
+        return METRIC_PROMPTS[self.current_metric]
+
+    def extract_metric_value(self, conversation: list[str]) -> Optional[any]:
+        formatted_prompt = EXTRACTION_PROMPT.format(
+            metric=self.current_metric.name,
+            conversation="\n".join(conversation)
+        )
+        
+        response = client.chat.completions.create(
+            model="gpt-4-turbo-preview",
+            response_format={"type": "json_object"},
+            messages=[
+                {"role": "system", "content": formatted_prompt}
+            ]
+        )
+        
+        try:
+            result = json.loads(response.choices[0].message.content)
+            return result.get('value')
+        except Exception:
+            return None
+
+    def process_conversation(self, conversation: list[str]) -> Dict:
+        # Try to extract value for current metric
+        value = self.extract_metric_value(conversation)
+        
+        if value is not None:
+            # Store the value and move to next metric
+            if self.current_metric == ProfileMetric.ACADEMIC_SCORE:
+                self.profile["academic_score"] = value
+            elif self.current_metric == ProfileMetric.COUNTRIES:
+                self.profile["preferred_countries"] = value
+            elif self.current_metric == ProfileMetric.INTERESTS:
+                self.profile["areas_of_interest"] = value
+            elif self.current_metric == ProfileMetric.BUDGET:
+                self.profile["budget_range"] = value
+            
+            # Move to next metric if available
+            self.metric_index += 1
+            if self.metric_index < len(self.metrics_order):
+                self.current_metric = self.metrics_order[self.metric_index]
+                return {"question": self.get_next_question()}
+            else:
+                return {"profile": self.profile}
+        
+        # If value wasn't extracted, ask a follow-up question
+        return {"question": f"I still need to know {self.get_next_question()}"}
+
+# Global dictionary to store profile builders for each session
+profile_builders = {}
+
+def generate_next_step(conversation: list[str], session_id: str) -> Dict:
+    # Get or create profile builder for this session
+    if session_id not in profile_builders:
+        profile_builders[session_id] = ProfileBuilder()
     
-    response = client.chat.completions.create(
-        model="gpt-4-turbo",
-        response_format={"type": "json_object"},
-        messages=[
-            {"role": "system", "content": formatted_prompt},
-            {"role": "user", "content": "Let's start building my profile"}
-        ]
-    )
-    
-    try:
-        result = json.loads(response.choices[0].message.content)
-        if not ('question' in result or 'profile' in result):
-            return {"question": "I apologize, but I need to gather some information about you. What's your academic performance like (GPA or test scores)?"}
-        return result
-    except Exception as e:
-        return {"question": "I apologize for the error. Could you tell me about your academic performance?"}
+    builder = profile_builders[session_id]
+    return builder.process_conversation(conversation)
