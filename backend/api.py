@@ -30,13 +30,18 @@ def start_conversation():
         response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
         response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
         return response
+    
+    # Get mode from request body, default to 'profile' if not specified
+    data = request.json or {}
+    mode = data.get('mode', 'profile')
         
     session_id = str(uuid4())
     
     # Create new session with ProfileBuilder and empty conversation
     sessions[session_id] = {
         'builder': ProfileBuilder(),
-        'conversation': []
+        'conversation': [],
+        'mode': mode  # Store the mode in the session
     }
     
     # Get initial message from the profile builder
@@ -48,13 +53,15 @@ def start_conversation():
         return jsonify({
             "session_id": session_id,
             "message": ai_response['question'],
-            "completed": False
+            "completed": False,
+            "mode": mode
         })
     else:
         return jsonify({
             "session_id": session_id,
             "profile": ai_response['profile'],
-            "completed": True
+            "completed": True,
+            "mode": mode
         })
 
 @app.route('/continue-conversation', methods=['POST', 'OPTIONS'])
@@ -87,12 +94,14 @@ def continue_conversation():
         session['conversation'].append(ai_response['question'])
         return jsonify({
             "message": ai_response['question'],
-            "completed": False
+            "completed": False,
+            "mode": session['mode']
         })
     else:
         return jsonify({
             "profile": ai_response['profile'],
-            "completed": True
+            "completed": True,
+            "mode": session['mode']
         })
 
 if __name__ == '__main__':
