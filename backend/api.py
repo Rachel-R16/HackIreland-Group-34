@@ -123,6 +123,15 @@ def continue_conversation():
 
 @app.route('/recommend', methods=['POST', 'OPTIONS'])
 def recommend_api():
+    """
+    This endpoint is used to call the recommend function with the given data.
+    
+    Parameters:
+    data (dict): A dictionary containing the user's preferences and other relevant information.
+    
+    Returns:
+    A JSON object containing the recommended universities and courses.
+    """
     if request.method == 'OPTIONS':
         return handle_options()
     
