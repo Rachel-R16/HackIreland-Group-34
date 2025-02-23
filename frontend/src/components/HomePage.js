@@ -1,29 +1,24 @@
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import "../styles/HomePage.css";
-import studenticon from "../assets/studenticon.jpg";
+import backgroundImage from "../assets/background.png";
+import logoImage from "../assets/studenticon.jpg";
 
-export default function HomePage() {
-    const navigate = useNavigate();
+const HomePage = () => {
+  return (
+    <div className="home-container" style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div className="logo-title-container">
+        <img src={logoImage} alt="Logo" className="logo" />
+        <h1 className="title">StudentHive</h1>
+      </div>
+      <h2 className="main-heading">FIND EVERYTHING</h2>
+      <div className="button-container">
+        <button className="large-button">FIND COURSES</button>
+        <button className="large-button">FIND UNIVERSITIES</button>
+        <button className="large-button">FIND ACCOMMODATION</button>
+      </div>
+      <button className="large-button" style={{ top: "75%" }}>FIND EVERYTHING</button>
+    </div>
+  );
+};
 
-    return (
-        <div className="home-container">
-            <div className="home-content">
-                <div className="home-left">
-                    <img src={studenticon} alt="Student Vector" />
-                </div>
-                <div className="home-right">
-                    <h1 className="home-title">StudyHive</h1>
-                    <p className="home-description">Your perfect uni, course & stay – in one place!</p>
-                    <button className="home-button" onClick={() => navigate("/selection")}>
-                        Get Started
-                    </button>
-                </div>
-            </div>
-
-           
-            <footer className="home-footer">
-                <p>&copy; {new Date().getFullYear()} StudyHive. All Rights Reserved.</p>
-            </footer>
-        </div>
-    );
-}
+export default HomePage;
