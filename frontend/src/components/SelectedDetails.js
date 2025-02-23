@@ -14,7 +14,7 @@ export default function SelectedDetails() {
         if (storedCourses.length > 0) {
             setSelectedCourses(storedCourses);
         } else {
-            navigate("/user-selection");
+            navigate("/selected-details");
         }
     }, [navigate]);
 
