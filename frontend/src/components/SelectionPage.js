@@ -11,11 +11,20 @@ export default function SelectionPage() {
     const handleSelection = async (category) => {
         setLoading(true);
         try {
-            // Send mode parameter
-            const response = await fetch("http://localhost:5000/start-conversation", {
+            // Map frontend categories to backend profile types
+            const profileTypeMap = {
+                'course': 'course_profile',
+                'university': 'university_profile',
+                'accommodation': 'accommodation_profile',
+                'discover-more': 'general'
+            };
+
+            const response = await fetch("http://localhost:5001/start-conversation", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ mode: category }),
+                body: JSON.stringify({ 
+                    profile_type: profileTypeMap[category]
+                }),
             });
 
             if (!response.ok) {
@@ -24,8 +33,14 @@ export default function SelectionPage() {
 
             const data = await response.json();
 
-            // Navigate to ChatbotScreen with initial questions
-            navigate("/chatbot", { state: { category, questions: data.questions || [] } });
+            // Navigate to ChatbotScreen with initial questions and profile type
+            navigate("/chatbot", { 
+                state: { 
+                    category, 
+                    profile_type: profileTypeMap[category],
+                    questions: data.questions || [] 
+                } 
+            });
 
         } catch (error) {
             console.error("Error fetching data:", error);

@@ -1,4 +1,3 @@
-
 //debug
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
@@ -10,7 +9,14 @@ import { Checkmark } from "@carbon/icons-react";
 export default function ChatbotScreen() {
     const location = useLocation();
     const navigate = useNavigate();
-    const { category } = location.state || {};
+    const { category, profile_type } = location.state || {};
+
+    // Redirect if no category is selected
+    useEffect(() => {
+        if (!category) {
+            navigate('/selection');
+        }
+    }, [category, navigate]);
 
     const [conversation, setConversation] = useState([]);
     const [userInput, setUserInput] = useState("");
@@ -22,13 +28,29 @@ export default function ChatbotScreen() {
 
     useEffect(() => {
         const startConversation = async () => {
+            if (!category) return; // Don't start if no category
+
             console.log("🔵 Starting conversation...");
             try {
-                const response = await fetch("http://localhost:5000/start-conversation", {
+                // Map frontend categories to backend profile types
+                const profileTypeMap = {
+                    'course': 'course_profile',
+                    'university': 'university_profile',
+                    'accommodation': 'accommodation_profile',
+                    'discover-more': 'general'
+                };
+
+                const response = await fetch("http://localhost:5001/start-conversation", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ mode: category })
+                    body: JSON.stringify({ 
+                        profile_type: profile_type || profileTypeMap[category] 
+                    })
                 });
+
+                if (!response.ok) {
+                    throw new Error("Failed to start conversation");
+                }
 
                 const data = await response.json();
                 console.log("✅ Start conversation response:", data);
@@ -39,11 +61,16 @@ export default function ChatbotScreen() {
                 }
             } catch (error) {
                 console.error("❌ Error starting conversation:", error);
+                // Show error message in chat
+                setConversation([{ 
+                    type: "bot", 
+                    text: "Sorry, I'm having trouble starting our conversation. Please try again." 
+                }]);
             }
         };
 
         startConversation();
-    }, [category]);
+    }, [category, profile_type]); // Add profile_type as dependency
 
     useEffect(() => {
         if (chatContainerRef.current) {
@@ -60,7 +87,7 @@ export default function ChatbotScreen() {
             try {
                 console.log("📤 Sending user input:", { session_id: sessionId, message: userMessage });
 
-                const response = await fetch("http://localhost:5000/continue-conversation", {
+                const response = await fetch("http://localhost:5001/continue-conversation", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ session_id: sessionId, message: userMessage })
@@ -91,20 +118,30 @@ export default function ChatbotScreen() {
         // ✅ Ensure Payload Format Matches Exactly
         const formattedProfile = {
             data: {
-                academic_score: profileData.academic_score,
-                preferred_countries: Array.isArray(profileData.preferred_countries) ? profileData.preferred_countries : [],
-                areas_of_interest: Array.isArray(profileData.areas_of_interest) ? profileData.areas_of_interest : [],
-                budget_range: {
-                    min: profileData.budget_range?.min ?? 0,
-                    max: profileData.budget_range?.max ?? 0
+                profile: {
+                    academic_score: profileData.academic_score,
+                    preferred_countries: Array.isArray(profileData.preferred_countries) ? profileData.preferred_countries : [],
+                    areas_of_interest: Array.isArray(profileData.areas_of_interest) ? profileData.areas_of_interest : [],
+                    budget_range_for_yearly_fees: {
+                        min: profileData.budget_range_for_yearly_fees?.min ?? null,
+                        max: profileData.budget_range_for_yearly_fees?.max ?? null
+                    },
+                    nationality: profileData.nationality ?? null,
+                    tests_taken: profileData.tests_taken ?? {},
+                    scholarship_interest: profileData.scholarship_interest ?? false,
+                    budget_range_for_weekly_accommodation: {
+                        min: profileData.budget_range_for_weekly_accommodation?.min ?? null,
+                        max: profileData.budget_range_for_weekly_accommodation?.max ?? null
+                    }
                 }
-            }
+            },
+            profile_type: location.state?.profile_type || 'general'
         };
 
-        console.log("📤 Sending profile data to recommend-courses API:", JSON.stringify(formattedProfile, null, 2));
+        console.log("📤 Sending profile data to recommend API:", JSON.stringify(formattedProfile, null, 2));
 
         try {
-            const recommendationResponse = await fetch("http://localhost:5000/recommend-courses", {
+            const recommendationResponse = await fetch("http://localhost:5001/recommend", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formattedProfile)
@@ -128,7 +165,7 @@ export default function ChatbotScreen() {
             } else {
                 console.error("❌ No recommendations received from API! Double-check payload structure.");
                 console.log("⚠️ Navigating to /user-selection even if recommendations are empty.");
-                navigate("/user-selection"); // ✅ Ensure navigation happens even if response is empty
+                navigate("/user-selection");
             }
         } catch (error) {
             console.error("❌ Error fetching recommendations:", error);
