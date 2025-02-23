@@ -1,0 +1,3232 @@
+[
+    {
+        "Australian National University (ANU)": [
+            {
+                "University Lodge Haven Hall": {
+                    "rent": 159,
+                    "link": "https://www.university-lodge-haven-hall.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Residences": {
+                    "rent": 102,
+                    "link": "https://www.campus-suites-liv-stay-residences.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Apartments": {
+                    "rent": 272,
+                    "link": "https://www.campus-suites-haven-apartments.com/"
+                }
+            },
+            {
+                "Urban Arcadia Apartments": {
+                    "rent": 297,
+                    "link": "https://www.urban-arcadia-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Haven Student Housing": {
+                    "rent": 393,
+                    "link": "https://www.university-lodge-haven-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Melbourne": [
+            {
+                "University Lodge Arcadia Apartments": {
+                    "rent": 187,
+                    "link": "https://www.university-lodge-arcadia-apartments.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Hall": {
+                    "rent": 416,
+                    "link": "https://www.urban-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Flats": {
+                    "rent": 205,
+                    "link": "https://www.student-living-arcadia-flats.com/"
+                }
+            },
+            {
+                "Residences at River Hall": {
+                    "rent": 407,
+                    "link": "https://www.residences-at-river-hall.com/"
+                }
+            },
+            {
+                "Residences at LIV Stay Hall": {
+                    "rent": 127,
+                    "link": "https://www.residences-at-liv-stay-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Sydney": [
+            {
+                "The Arcadia Hall": {
+                    "rent": 389,
+                    "link": "https://www.the-arcadia-hall.com/"
+                }
+            },
+            {
+                "Residences at Haven Residences": {
+                    "rent": 309,
+                    "link": "https://www.residences-at-haven-residences.com/"
+                }
+            },
+            {
+                "Student Living Yugo Suites": {
+                    "rent": 472,
+                    "link": "https://www.student-living-yugo-suites.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Suites": {
+                    "rent": 166,
+                    "link": "https://www.campus-suites-arcadia-suites.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Flats": {
+                    "rent": 351,
+                    "link": "https://www.campus-suites-liv-stay-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of New South Wales (UNSW Sydney)": [
+            {
+                "Campus Suites LIV Stay Student Housing": {
+                    "rent": 259,
+                    "link": "https://www.campus-suites-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge Haven Residences": {
+                    "rent": 253,
+                    "link": "https://www.university-lodge-haven-residences.com/"
+                }
+            },
+            {
+                "The River Residences": {
+                    "rent": 128,
+                    "link": "https://www.the-river-residences.com/"
+                }
+            },
+            {
+                "Urban Haven Hall": {
+                    "rent": 455,
+                    "link": "https://www.urban-haven-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Hall": {
+                    "rent": 482,
+                    "link": "https://www.campus-suites-haven-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Queensland (UQ)": [
+            {
+                "The LIV Stay Apartments": {
+                    "rent": 335,
+                    "link": "https://www.the-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Urban Arcadia Residences": {
+                    "rent": 220,
+                    "link": "https://www.urban-arcadia-residences.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Apartments": {
+                    "rent": 321,
+                    "link": "https://www.campus-suites-yugo-apartments.com/"
+                }
+            },
+            {
+                "Residences at River Suites": {
+                    "rent": 401,
+                    "link": "https://www.residences-at-river-suites.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Residences": {
+                    "rent": 492,
+                    "link": "https://www.university-lodge-liv-stay-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Monash University": [
+            {
+                "Campus Suites LIV Stay Apartments": {
+                    "rent": 232,
+                    "link": "https://www.campus-suites-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Apartments": {
+                    "rent": 100,
+                    "link": "https://www.urban-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Suites": {
+                    "rent": 206,
+                    "link": "https://www.campus-suites-haven-suites.com/"
+                }
+            },
+            {
+                "Residences at LIV Stay Suites": {
+                    "rent": 448,
+                    "link": "https://www.residences-at-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Campus Suites River Hall": {
+                    "rent": 132,
+                    "link": "https://www.campus-suites-river-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Western Australia (UWA)": [
+            {
+                "Campus Suites River Suites": {
+                    "rent": 482,
+                    "link": "https://www.campus-suites-river-suites.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Residences": {
+                    "rent": 112,
+                    "link": "https://www.university-lodge-arcadia-residences.com/"
+                }
+            },
+            {
+                "Student Living Haven Flats": {
+                    "rent": 439,
+                    "link": "https://www.student-living-haven-flats.com/"
+                }
+            },
+            {
+                "Residences at Haven Student Housing": {
+                    "rent": 403,
+                    "link": "https://www.residences-at-haven-student-housing.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Apartments": {
+                    "rent": 304,
+                    "link": "https://www.urban-liv-stay-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Adelaide": [
+            {
+                "Student Living River Residences": {
+                    "rent": 297,
+                    "link": "https://www.student-living-river-residences.com/"
+                }
+            },
+            {
+                "Residences at Haven Flats": {
+                    "rent": 114,
+                    "link": "https://www.residences-at-haven-flats.com/"
+                }
+            },
+            {
+                "The LIV Stay Flats": {
+                    "rent": 145,
+                    "link": "https://www.the-liv-stay-flats.com/"
+                }
+            },
+            {
+                "Student Living River Suites": {
+                    "rent": 114,
+                    "link": "https://www.student-living-river-suites.com/"
+                }
+            },
+            {
+                "The Yugo Flats": {
+                    "rent": 402,
+                    "link": "https://www.the-yugo-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Technology Sydney (UTS)": [
+            {
+                "Residences at Arcadia Hall": {
+                    "rent": 319,
+                    "link": "https://www.residences-at-arcadia-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Flats": {
+                    "rent": 494,
+                    "link": "https://www.campus-suites-arcadia-flats.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Residences": {
+                    "rent": 481,
+                    "link": "https://www.university-lodge-liv-stay-residences.com/"
+                }
+            },
+            {
+                "Residences at Haven Apartments": {
+                    "rent": 395,
+                    "link": "https://www.residences-at-haven-apartments.com/"
+                }
+            },
+            {
+                "Residences at Arcadia Residences": {
+                    "rent": 153,
+                    "link": "https://www.residences-at-arcadia-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Canberra": [
+            {
+                "Student Living River Suites": {
+                    "rent": 260,
+                    "link": "https://www.student-living-river-suites.com/"
+                }
+            },
+            {
+                "Residences at Yugo Flats": {
+                    "rent": 145,
+                    "link": "https://www.residences-at-yugo-flats.com/"
+                }
+            },
+            {
+                "Urban River Apartments": {
+                    "rent": 317,
+                    "link": "https://www.urban-river-apartments.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Flats": {
+                    "rent": 219,
+                    "link": "https://www.student-living-arcadia-flats.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Residences": {
+                    "rent": 450,
+                    "link": "https://www.campus-suites-arcadia-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Macquarie University": [
+            {
+                "Student Living River Apartments": {
+                    "rent": 209,
+                    "link": "https://www.student-living-river-apartments.com/"
+                }
+            },
+            {
+                "Residences at River Suites": {
+                    "rent": 439,
+                    "link": "https://www.residences-at-river-suites.com/"
+                }
+            },
+            {
+                "Urban Arcadia Apartments": {
+                    "rent": 248,
+                    "link": "https://www.urban-arcadia-apartments.com/"
+                }
+            },
+            {
+                "Student Living LIV Stay Flats": {
+                    "rent": 212,
+                    "link": "https://www.student-living-liv-stay-flats.com/"
+                }
+            },
+            {
+                "Campus Suites River Apartments": {
+                    "rent": 354,
+                    "link": "https://www.campus-suites-river-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "RMIT University": [
+            {
+                "University Lodge River Hall": {
+                    "rent": 445,
+                    "link": "https://www.university-lodge-river-hall.com/"
+                }
+            },
+            {
+                "Campus Suites River Residences": {
+                    "rent": 381,
+                    "link": "https://www.campus-suites-river-residences.com/"
+                }
+            },
+            {
+                "University Lodge River Student Housing": {
+                    "rent": 101,
+                    "link": "https://www.university-lodge-river-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites River Apartments": {
+                    "rent": 314,
+                    "link": "https://www.campus-suites-river-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Flats": {
+                    "rent": 486,
+                    "link": "https://www.campus-suites-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Curtin University": [
+            {
+                "The Yugo Student Housing": {
+                    "rent": 331,
+                    "link": "https://www.the-yugo-student-housing.com/"
+                }
+            },
+            {
+                "The Arcadia Residences": {
+                    "rent": 217,
+                    "link": "https://www.the-arcadia-residences.com/"
+                }
+            },
+            {
+                "The LIV Stay Residences": {
+                    "rent": 141,
+                    "link": "https://www.the-liv-stay-residences.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Flats": {
+                    "rent": 260,
+                    "link": "https://www.campus-suites-arcadia-flats.com/"
+                }
+            },
+            {
+                "University Lodge River Student Housing": {
+                    "rent": 140,
+                    "link": "https://www.university-lodge-river-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Wollongong": [
+            {
+                "Urban LIV Stay Apartments": {
+                    "rent": 158,
+                    "link": "https://www.urban-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Hall": {
+                    "rent": 343,
+                    "link": "https://www.campus-suites-arcadia-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Suites": {
+                    "rent": 164,
+                    "link": "https://www.campus-suites-haven-suites.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Apartments": {
+                    "rent": 241,
+                    "link": "https://www.campus-suites-arcadia-apartments.com/"
+                }
+            },
+            {
+                "Urban Yugo Hall": {
+                    "rent": 332,
+                    "link": "https://www.urban-yugo-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Queensland University of Technology (QUT)": [
+            {
+                "The River Suites": {
+                    "rent": 342,
+                    "link": "https://www.the-river-suites.com/"
+                }
+            },
+            {
+                "Student Living Haven Flats": {
+                    "rent": 155,
+                    "link": "https://www.student-living-haven-flats.com/"
+                }
+            },
+            {
+                "The River Apartments": {
+                    "rent": 389,
+                    "link": "https://www.the-river-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Residences": {
+                    "rent": 197,
+                    "link": "https://www.university-lodge-yugo-residences.com/"
+                }
+            },
+            {
+                "The Yugo Suites": {
+                    "rent": 462,
+                    "link": "https://www.the-yugo-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Deakin University": [
+            {
+                "Urban Yugo Flats": {
+                    "rent": 169,
+                    "link": "https://www.urban-yugo-flats.com/"
+                }
+            },
+            {
+                "Student Living Haven Apartments": {
+                    "rent": 219,
+                    "link": "https://www.student-living-haven-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Student Housing": {
+                    "rent": 229,
+                    "link": "https://www.university-lodge-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Student Living River Suites": {
+                    "rent": 444,
+                    "link": "https://www.student-living-river-suites.com/"
+                }
+            },
+            {
+                "The River Flats": {
+                    "rent": 357,
+                    "link": "https://www.the-river-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Griffith University": [
+            {
+                "Urban Haven Hall": {
+                    "rent": 335,
+                    "link": "https://www.urban-haven-hall.com/"
+                }
+            },
+            {
+                "The Arcadia Flats": {
+                    "rent": 320,
+                    "link": "https://www.the-arcadia-flats.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Suites": {
+                    "rent": 134,
+                    "link": "https://www.campus-suites-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Residences": {
+                    "rent": 350,
+                    "link": "https://www.campus-suites-liv-stay-residences.com/"
+                }
+            },
+            {
+                "Residences at Arcadia Flats": {
+                    "rent": 248,
+                    "link": "https://www.residences-at-arcadia-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Newcastle": [
+            {
+                "Urban River Residences": {
+                    "rent": 316,
+                    "link": "https://www.urban-river-residences.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Suites": {
+                    "rent": 274,
+                    "link": "https://www.student-living-arcadia-suites.com/"
+                }
+            },
+            {
+                "The Haven Flats": {
+                    "rent": 481,
+                    "link": "https://www.the-haven-flats.com/"
+                }
+            },
+            {
+                "The Haven Flats": {
+                    "rent": 131,
+                    "link": "https://www.the-haven-flats.com/"
+                }
+            },
+            {
+                "Urban Arcadia Student Housing": {
+                    "rent": 103,
+                    "link": "https://www.urban-arcadia-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Western Sydney University": [
+            {
+                "Student Living River Flats": {
+                    "rent": 338,
+                    "link": "https://www.student-living-river-flats.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Student Housing": {
+                    "rent": 120,
+                    "link": "https://www.campus-suites-yugo-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Student Housing": {
+                    "rent": 337,
+                    "link": "https://www.university-lodge-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Hall": {
+                    "rent": 486,
+                    "link": "https://www.campus-suites-arcadia-hall.com/"
+                }
+            },
+            {
+                "The Haven Suites": {
+                    "rent": 439,
+                    "link": "https://www.the-haven-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Tasmania": [
+            {
+                "Residences at Arcadia Student Housing": {
+                    "rent": 447,
+                    "link": "https://www.residences-at-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "Urban Haven Flats": {
+                    "rent": 150,
+                    "link": "https://www.urban-haven-flats.com/"
+                }
+            },
+            {
+                "The Arcadia Student Housing": {
+                    "rent": 153,
+                    "link": "https://www.the-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Hall": {
+                    "rent": 126,
+                    "link": "https://www.campus-suites-haven-hall.com/"
+                }
+            },
+            {
+                "Residences at Arcadia Residences": {
+                    "rent": 492,
+                    "link": "https://www.residences-at-arcadia-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Massachusetts Institute of Technology (MIT)": [
+            {
+                "Campus Suites Haven Suites": {
+                    "rent": 107,
+                    "link": "https://www.campus-suites-haven-suites.com/"
+                }
+            },
+            {
+                "Student Living Yugo Apartments": {
+                    "rent": 358,
+                    "link": "https://www.student-living-yugo-apartments.com/"
+                }
+            },
+            {
+                "Urban Yugo Apartments": {
+                    "rent": 450,
+                    "link": "https://www.urban-yugo-apartments.com/"
+                }
+            },
+            {
+                "Residences at River Student Housing": {
+                    "rent": 326,
+                    "link": "https://www.residences-at-river-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Residences": {
+                    "rent": 492,
+                    "link": "https://www.campus-suites-haven-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Stanford University": [
+            {
+                "Student Living River Hall": {
+                    "rent": 346,
+                    "link": "https://www.student-living-river-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Residences": {
+                    "rent": 489,
+                    "link": "https://www.campus-suites-arcadia-residences.com/"
+                }
+            },
+            {
+                "The Haven Apartments": {
+                    "rent": 150,
+                    "link": "https://www.the-haven-apartments.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Suites": {
+                    "rent": 152,
+                    "link": "https://www.urban-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Campus Suites River Apartments": {
+                    "rent": 279,
+                    "link": "https://www.campus-suites-river-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Harvard University": [
+            {
+                "The LIV Stay Apartments": {
+                    "rent": 377,
+                    "link": "https://www.the-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Student Living River Flats": {
+                    "rent": 407,
+                    "link": "https://www.student-living-river-flats.com/"
+                }
+            },
+            {
+                "Campus Suites River Apartments": {
+                    "rent": 298,
+                    "link": "https://www.campus-suites-river-apartments.com/"
+                }
+            },
+            {
+                "Residences at LIV Stay Residences": {
+                    "rent": 301,
+                    "link": "https://www.residences-at-liv-stay-residences.com/"
+                }
+            },
+            {
+                "The Haven Apartments": {
+                    "rent": 455,
+                    "link": "https://www.the-haven-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "California Institute of Technology (Caltech)": [
+            {
+                "Residences at Arcadia Student Housing": {
+                    "rent": 129,
+                    "link": "https://www.residences-at-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Flats": {
+                    "rent": 429,
+                    "link": "https://www.university-lodge-arcadia-flats.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Suites": {
+                    "rent": 276,
+                    "link": "https://www.urban-liv-stay-suites.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Apartments": {
+                    "rent": 120,
+                    "link": "https://www.university-lodge-yugo-apartments.com/"
+                }
+            },
+            {
+                "The LIV Stay Suites": {
+                    "rent": 123,
+                    "link": "https://www.the-liv-stay-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Chicago": [
+            {
+                "Urban LIV Stay Student Housing": {
+                    "rent": 184,
+                    "link": "https://www.urban-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "Urban Arcadia Apartments": {
+                    "rent": 127,
+                    "link": "https://www.urban-arcadia-apartments.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Suites": {
+                    "rent": 120,
+                    "link": "https://www.university-lodge-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Apartments": {
+                    "rent": 460,
+                    "link": "https://www.urban-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Flats": {
+                    "rent": 443,
+                    "link": "https://www.campus-suites-liv-stay-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Princeton University": [
+            {
+                "Residences at LIV Stay Suites": {
+                    "rent": 232,
+                    "link": "https://www.residences-at-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Student Living Haven Flats": {
+                    "rent": 421,
+                    "link": "https://www.student-living-haven-flats.com/"
+                }
+            },
+            {
+                "Campus Suites River Suites": {
+                    "rent": 272,
+                    "link": "https://www.campus-suites-river-suites.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Student Housing": {
+                    "rent": 498,
+                    "link": "https://www.campus-suites-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "Urban Arcadia Hall": {
+                    "rent": 419,
+                    "link": "https://www.urban-arcadia-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Columbia University": [
+            {
+                "Urban Yugo Student Housing": {
+                    "rent": 309,
+                    "link": "https://www.urban-yugo-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge Haven Hall": {
+                    "rent": 201,
+                    "link": "https://www.university-lodge-haven-hall.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Flats": {
+                    "rent": 261,
+                    "link": "https://www.urban-liv-stay-flats.com/"
+                }
+            },
+            {
+                "The LIV Stay Suites": {
+                    "rent": 208,
+                    "link": "https://www.the-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Urban Arcadia Student Housing": {
+                    "rent": 452,
+                    "link": "https://www.urban-arcadia-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Yale University": [
+            {
+                "The Arcadia Residences": {
+                    "rent": 415,
+                    "link": "https://www.the-arcadia-residences.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Student Housing": {
+                    "rent": 308,
+                    "link": "https://www.urban-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "Student Living Haven Hall": {
+                    "rent": 207,
+                    "link": "https://www.student-living-haven-hall.com/"
+                }
+            },
+            {
+                "Campus Suites River Residences": {
+                    "rent": 396,
+                    "link": "https://www.campus-suites-river-residences.com/"
+                }
+            },
+            {
+                "Residences at LIV Stay Flats": {
+                    "rent": 201,
+                    "link": "https://www.residences-at-liv-stay-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Pennsylvania": [
+            {
+                "Residences at LIV Stay Apartments": {
+                    "rent": 191,
+                    "link": "https://www.residences-at-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "The Haven Suites": {
+                    "rent": 320,
+                    "link": "https://www.the-haven-suites.com/"
+                }
+            },
+            {
+                "University Lodge River Hall": {
+                    "rent": 216,
+                    "link": "https://www.university-lodge-river-hall.com/"
+                }
+            },
+            {
+                "Student Living River Hall": {
+                    "rent": 405,
+                    "link": "https://www.student-living-river-hall.com/"
+                }
+            },
+            {
+                "Student Living Haven Flats": {
+                    "rent": 391,
+                    "link": "https://www.student-living-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of California, Berkeley": [
+            {
+                "Student Living River Suites": {
+                    "rent": 470,
+                    "link": "https://www.student-living-river-suites.com/"
+                }
+            },
+            {
+                "Urban River Flats": {
+                    "rent": 327,
+                    "link": "https://www.urban-river-flats.com/"
+                }
+            },
+            {
+                "Residences at LIV Stay Apartments": {
+                    "rent": 323,
+                    "link": "https://www.residences-at-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites River Suites": {
+                    "rent": 239,
+                    "link": "https://www.campus-suites-river-suites.com/"
+                }
+            },
+            {
+                "University Lodge River Residences": {
+                    "rent": 321,
+                    "link": "https://www.university-lodge-river-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of California, Los Angeles (UCLA)": [
+            {
+                "University Lodge LIV Stay Student Housing": {
+                    "rent": 396,
+                    "link": "https://www.university-lodge-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "The Yugo Student Housing": {
+                    "rent": 183,
+                    "link": "https://www.the-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Student Housing": {
+                    "rent": 448,
+                    "link": "https://www.urban-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Hall": {
+                    "rent": 392,
+                    "link": "https://www.campus-suites-haven-hall.com/"
+                }
+            },
+            {
+                "Student Living River Hall": {
+                    "rent": 242,
+                    "link": "https://www.student-living-river-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Michigan, Ann Arbor": [
+            {
+                "The LIV Stay Student Housing": {
+                    "rent": 416,
+                    "link": "https://www.the-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Hall": {
+                    "rent": 223,
+                    "link": "https://www.urban-liv-stay-hall.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Flats": {
+                    "rent": 247,
+                    "link": "https://www.university-lodge-yugo-flats.com/"
+                }
+            },
+            {
+                "Residences at LIV Stay Hall": {
+                    "rent": 289,
+                    "link": "https://www.residences-at-liv-stay-hall.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Hall": {
+                    "rent": 316,
+                    "link": "https://www.university-lodge-liv-stay-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Cornell University": [
+            {
+                "The LIV Stay Apartments": {
+                    "rent": 208,
+                    "link": "https://www.the-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Student Housing": {
+                    "rent": 286,
+                    "link": "https://www.campus-suites-haven-student-housing.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Hall": {
+                    "rent": 306,
+                    "link": "https://www.urban-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Urban Haven Suites": {
+                    "rent": 180,
+                    "link": "https://www.urban-haven-suites.com/"
+                }
+            },
+            {
+                "Urban Yugo Apartments": {
+                    "rent": 148,
+                    "link": "https://www.urban-yugo-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Johns Hopkins University": [
+            {
+                "The Yugo Student Housing": {
+                    "rent": 262,
+                    "link": "https://www.the-yugo-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge Haven Hall": {
+                    "rent": 319,
+                    "link": "https://www.university-lodge-haven-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Student Housing": {
+                    "rent": 153,
+                    "link": "https://www.campus-suites-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Residences": {
+                    "rent": 344,
+                    "link": "https://www.campus-suites-arcadia-residences.com/"
+                }
+            },
+            {
+                "Residences at Arcadia Apartments": {
+                    "rent": 383,
+                    "link": "https://www.residences-at-arcadia-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Northwestern University": [
+            {
+                "The Haven Apartments": {
+                    "rent": 360,
+                    "link": "https://www.the-haven-apartments.com/"
+                }
+            },
+            {
+                "Residences at Yugo Apartments": {
+                    "rent": 254,
+                    "link": "https://www.residences-at-yugo-apartments.com/"
+                }
+            },
+            {
+                "Urban River Hall": {
+                    "rent": 466,
+                    "link": "https://www.urban-river-hall.com/"
+                }
+            },
+            {
+                "Campus Suites River Flats": {
+                    "rent": 200,
+                    "link": "https://www.campus-suites-river-flats.com/"
+                }
+            },
+            {
+                "The Yugo Suites": {
+                    "rent": 214,
+                    "link": "https://www.the-yugo-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Washington": [
+            {
+                "University Lodge Arcadia Flats": {
+                    "rent": 299,
+                    "link": "https://www.university-lodge-arcadia-flats.com/"
+                }
+            },
+            {
+                "Residences at River Apartments": {
+                    "rent": 439,
+                    "link": "https://www.residences-at-river-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Hall": {
+                    "rent": 362,
+                    "link": "https://www.university-lodge-arcadia-hall.com/"
+                }
+            },
+            {
+                "Urban Haven Flats": {
+                    "rent": 167,
+                    "link": "https://www.urban-haven-flats.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Hall": {
+                    "rent": 308,
+                    "link": "https://www.campus-suites-arcadia-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Duke University": [
+            {
+                "Student Living Yugo Flats": {
+                    "rent": 339,
+                    "link": "https://www.student-living-yugo-flats.com/"
+                }
+            },
+            {
+                "Urban Haven Suites": {
+                    "rent": 406,
+                    "link": "https://www.urban-haven-suites.com/"
+                }
+            },
+            {
+                "Urban River Residences": {
+                    "rent": 100,
+                    "link": "https://www.urban-river-residences.com/"
+                }
+            },
+            {
+                "Student Living Yugo Apartments": {
+                    "rent": 379,
+                    "link": "https://www.student-living-yugo-apartments.com/"
+                }
+            },
+            {
+                "Urban Haven Residences": {
+                    "rent": 163,
+                    "link": "https://www.urban-haven-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of California, San Diego (UCSD)": [
+            {
+                "Residences at Arcadia Suites": {
+                    "rent": 164,
+                    "link": "https://www.residences-at-arcadia-suites.com/"
+                }
+            },
+            {
+                "Urban Yugo Apartments": {
+                    "rent": 429,
+                    "link": "https://www.urban-yugo-apartments.com/"
+                }
+            },
+            {
+                "The Arcadia Suites": {
+                    "rent": 386,
+                    "link": "https://www.the-arcadia-suites.com/"
+                }
+            },
+            {
+                "Residences at Haven Hall": {
+                    "rent": 226,
+                    "link": "https://www.residences-at-haven-hall.com/"
+                }
+            },
+            {
+                "The Arcadia Hall": {
+                    "rent": 368,
+                    "link": "https://www.the-arcadia-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "New York University (NYU)": [
+            {
+                "Student Living Haven Flats": {
+                    "rent": 390,
+                    "link": "https://www.student-living-haven-flats.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Residences": {
+                    "rent": 118,
+                    "link": "https://www.campus-suites-haven-residences.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Student Housing": {
+                    "rent": 464,
+                    "link": "https://www.campus-suites-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "Student Living River Flats": {
+                    "rent": 116,
+                    "link": "https://www.student-living-river-flats.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Flats": {
+                    "rent": 125,
+                    "link": "https://www.campus-suites-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Wisconsin-Madison": [
+            {
+                "Student Living Haven Residences": {
+                    "rent": 111,
+                    "link": "https://www.student-living-haven-residences.com/"
+                }
+            },
+            {
+                "Residences at Yugo Hall": {
+                    "rent": 301,
+                    "link": "https://www.residences-at-yugo-hall.com/"
+                }
+            },
+            {
+                "Residences at Haven Flats": {
+                    "rent": 419,
+                    "link": "https://www.residences-at-haven-flats.com/"
+                }
+            },
+            {
+                "Urban Haven Flats": {
+                    "rent": 368,
+                    "link": "https://www.urban-haven-flats.com/"
+                }
+            },
+            {
+                "The Haven Student Housing": {
+                    "rent": 380,
+                    "link": "https://www.the-haven-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Toronto": [
+            {
+                "Residences at Haven Student Housing": {
+                    "rent": 104,
+                    "link": "https://www.residences-at-haven-student-housing.com/"
+                }
+            },
+            {
+                "The Yugo Student Housing": {
+                    "rent": 238,
+                    "link": "https://www.the-yugo-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Suites": {
+                    "rent": 303,
+                    "link": "https://www.university-lodge-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Residences at Yugo Suites": {
+                    "rent": 132,
+                    "link": "https://www.residences-at-yugo-suites.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Residences": {
+                    "rent": 188,
+                    "link": "https://www.campus-suites-haven-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of British Columbia": [
+            {
+                "Campus Suites River Hall": {
+                    "rent": 312,
+                    "link": "https://www.campus-suites-river-hall.com/"
+                }
+            },
+            {
+                "Residences at Yugo Student Housing": {
+                    "rent": 430,
+                    "link": "https://www.residences-at-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Urban River Suites": {
+                    "rent": 391,
+                    "link": "https://www.urban-river-suites.com/"
+                }
+            },
+            {
+                "Residences at River Student Housing": {
+                    "rent": 391,
+                    "link": "https://www.residences-at-river-student-housing.com/"
+                }
+            },
+            {
+                "Student Living Haven Flats": {
+                    "rent": 186,
+                    "link": "https://www.student-living-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "McGill University": [
+            {
+                "The Haven Flats": {
+                    "rent": 459,
+                    "link": "https://www.the-haven-flats.com/"
+                }
+            },
+            {
+                "The LIV Stay Residences": {
+                    "rent": 153,
+                    "link": "https://www.the-liv-stay-residences.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Suites": {
+                    "rent": 460,
+                    "link": "https://www.campus-suites-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Residences at Yugo Suites": {
+                    "rent": 407,
+                    "link": "https://www.residences-at-yugo-suites.com/"
+                }
+            },
+            {
+                "Student Living Yugo Residences": {
+                    "rent": 385,
+                    "link": "https://www.student-living-yugo-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "McMaster University": [
+            {
+                "University Lodge Arcadia Hall": {
+                    "rent": 285,
+                    "link": "https://www.university-lodge-arcadia-hall.com/"
+                }
+            },
+            {
+                "Campus Suites River Student Housing": {
+                    "rent": 294,
+                    "link": "https://www.campus-suites-river-student-housing.com/"
+                }
+            },
+            {
+                "Urban Yugo Hall": {
+                    "rent": 152,
+                    "link": "https://www.urban-yugo-hall.com/"
+                }
+            },
+            {
+                "The River Hall": {
+                    "rent": 337,
+                    "link": "https://www.the-river-hall.com/"
+                }
+            },
+            {
+                "The Yugo Suites": {
+                    "rent": 341,
+                    "link": "https://www.the-yugo-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Alberta": [
+            {
+                "Student Living Yugo Suites": {
+                    "rent": 445,
+                    "link": "https://www.student-living-yugo-suites.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Flats": {
+                    "rent": 307,
+                    "link": "https://www.student-living-arcadia-flats.com/"
+                }
+            },
+            {
+                "Student Living Haven Residences": {
+                    "rent": 416,
+                    "link": "https://www.student-living-haven-residences.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Hall": {
+                    "rent": 442,
+                    "link": "https://www.urban-liv-stay-hall.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Apartments": {
+                    "rent": 336,
+                    "link": "https://www.university-lodge-arcadia-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Waterloo": [
+            {
+                "Urban Haven Suites": {
+                    "rent": 391,
+                    "link": "https://www.urban-haven-suites.com/"
+                }
+            },
+            {
+                "The Arcadia Hall": {
+                    "rent": 285,
+                    "link": "https://www.the-arcadia-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Hall": {
+                    "rent": 204,
+                    "link": "https://www.campus-suites-yugo-hall.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Hall": {
+                    "rent": 249,
+                    "link": "https://www.university-lodge-arcadia-hall.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Hall": {
+                    "rent": 321,
+                    "link": "https://www.campus-suites-liv-stay-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Western University": [
+            {
+                "Residences at Haven Apartments": {
+                    "rent": 118,
+                    "link": "https://www.residences-at-haven-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Apartments": {
+                    "rent": 452,
+                    "link": "https://www.university-lodge-arcadia-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Student Housing": {
+                    "rent": 365,
+                    "link": "https://www.campus-suites-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Hall": {
+                    "rent": 261,
+                    "link": "https://www.campus-suites-yugo-hall.com/"
+                }
+            },
+            {
+                "Residences at Arcadia Flats": {
+                    "rent": 492,
+                    "link": "https://www.residences-at-arcadia-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Calgary": [
+            {
+                "The River Student Housing": {
+                    "rent": 336,
+                    "link": "https://www.the-river-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Hall": {
+                    "rent": 391,
+                    "link": "https://www.university-lodge-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Residences at Haven Suites": {
+                    "rent": 132,
+                    "link": "https://www.residences-at-haven-suites.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Student Housing": {
+                    "rent": 299,
+                    "link": "https://www.campus-suites-haven-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites River Hall": {
+                    "rent": 360,
+                    "link": "https://www.campus-suites-river-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Queen's University": [
+            {
+                "Residences at Arcadia Student Housing": {
+                    "rent": 328,
+                    "link": "https://www.residences-at-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "Urban Haven Residences": {
+                    "rent": 294,
+                    "link": "https://www.urban-haven-residences.com/"
+                }
+            },
+            {
+                "The Yugo Flats": {
+                    "rent": 447,
+                    "link": "https://www.the-yugo-flats.com/"
+                }
+            },
+            {
+                "The Haven Flats": {
+                    "rent": 351,
+                    "link": "https://www.the-haven-flats.com/"
+                }
+            },
+            {
+                "Student Living Yugo Flats": {
+                    "rent": 124,
+                    "link": "https://www.student-living-yugo-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Simon Fraser University": [
+            {
+                "Campus Suites LIV Stay Student Housing": {
+                    "rent": 329,
+                    "link": "https://www.campus-suites-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "Student Living LIV Stay Hall": {
+                    "rent": 124,
+                    "link": "https://www.student-living-liv-stay-hall.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Residences": {
+                    "rent": 210,
+                    "link": "https://www.university-lodge-liv-stay-residences.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Hall": {
+                    "rent": 184,
+                    "link": "https://www.urban-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Flats": {
+                    "rent": 469,
+                    "link": "https://www.campus-suites-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Dalhousie University": [
+            {
+                "Residences at Yugo Flats": {
+                    "rent": 472,
+                    "link": "https://www.residences-at-yugo-flats.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Residences": {
+                    "rent": 201,
+                    "link": "https://www.student-living-arcadia-residences.com/"
+                }
+            },
+            {
+                "The River Suites": {
+                    "rent": 328,
+                    "link": "https://www.the-river-suites.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Hall": {
+                    "rent": 127,
+                    "link": "https://www.urban-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Flats": {
+                    "rent": 171,
+                    "link": "https://www.student-living-arcadia-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Manitoba": [
+            {
+                "University Lodge River Hall": {
+                    "rent": 419,
+                    "link": "https://www.university-lodge-river-hall.com/"
+                }
+            },
+            {
+                "Student Living LIV Stay Student Housing": {
+                    "rent": 298,
+                    "link": "https://www.student-living-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "Residences at Yugo Student Housing": {
+                    "rent": 488,
+                    "link": "https://www.residences-at-yugo-student-housing.com/"
+                }
+            },
+            {
+                "The Yugo Hall": {
+                    "rent": 246,
+                    "link": "https://www.the-yugo-hall.com/"
+                }
+            },
+            {
+                "Student Living Yugo Hall": {
+                    "rent": 434,
+                    "link": "https://www.student-living-yugo-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Victoria": [
+            {
+                "The River Student Housing": {
+                    "rent": 483,
+                    "link": "https://www.the-river-student-housing.com/"
+                }
+            },
+            {
+                "Residences at Haven Flats": {
+                    "rent": 245,
+                    "link": "https://www.residences-at-haven-flats.com/"
+                }
+            },
+            {
+                "Urban Arcadia Apartments": {
+                    "rent": 248,
+                    "link": "https://www.urban-arcadia-apartments.com/"
+                }
+            },
+            {
+                "The LIV Stay Hall": {
+                    "rent": 258,
+                    "link": "https://www.the-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Student Living River Flats": {
+                    "rent": 358,
+                    "link": "https://www.student-living-river-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "York University": [
+            {
+                "University Lodge Yugo Residences": {
+                    "rent": 156,
+                    "link": "https://www.university-lodge-yugo-residences.com/"
+                }
+            },
+            {
+                "Campus Suites River Residences": {
+                    "rent": 290,
+                    "link": "https://www.campus-suites-river-residences.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Residences": {
+                    "rent": 167,
+                    "link": "https://www.urban-liv-stay-residences.com/"
+                }
+            },
+            {
+                "University Lodge River Apartments": {
+                    "rent": 334,
+                    "link": "https://www.university-lodge-river-apartments.com/"
+                }
+            },
+            {
+                "The Yugo Hall": {
+                    "rent": 139,
+                    "link": "https://www.the-yugo-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Carleton University": [
+            {
+                "University Lodge Arcadia Student Housing": {
+                    "rent": 260,
+                    "link": "https://www.university-lodge-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "Urban Arcadia Suites": {
+                    "rent": 212,
+                    "link": "https://www.urban-arcadia-suites.com/"
+                }
+            },
+            {
+                "Urban River Apartments": {
+                    "rent": 310,
+                    "link": "https://www.urban-river-apartments.com/"
+                }
+            },
+            {
+                "Residences at River Suites": {
+                    "rent": 418,
+                    "link": "https://www.residences-at-river-suites.com/"
+                }
+            },
+            {
+                "Urban Haven Flats": {
+                    "rent": 367,
+                    "link": "https://www.urban-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Guelph": [
+            {
+                "Student Living Yugo Hall": {
+                    "rent": 488,
+                    "link": "https://www.student-living-yugo-hall.com/"
+                }
+            },
+            {
+                "University Lodge River Suites": {
+                    "rent": 454,
+                    "link": "https://www.university-lodge-river-suites.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Apartments": {
+                    "rent": 157,
+                    "link": "https://www.urban-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Urban Yugo Suites": {
+                    "rent": 255,
+                    "link": "https://www.urban-yugo-suites.com/"
+                }
+            },
+            {
+                "Urban Arcadia Residences": {
+                    "rent": 477,
+                    "link": "https://www.urban-arcadia-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Concordia University": [
+            {
+                "University Lodge Yugo Residences": {
+                    "rent": 303,
+                    "link": "https://www.university-lodge-yugo-residences.com/"
+                }
+            },
+            {
+                "University Lodge River Residences": {
+                    "rent": 207,
+                    "link": "https://www.university-lodge-river-residences.com/"
+                }
+            },
+            {
+                "The Yugo Suites": {
+                    "rent": 176,
+                    "link": "https://www.the-yugo-suites.com/"
+                }
+            },
+            {
+                "Student Living River Apartments": {
+                    "rent": 440,
+                    "link": "https://www.student-living-river-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Apartments": {
+                    "rent": 283,
+                    "link": "https://www.campus-suites-haven-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Trinity College Dublin (TCD)": [
+            {
+                "The LIV Stay Residences": {
+                    "rent": 434,
+                    "link": "https://www.the-liv-stay-residences.com/"
+                }
+            },
+            {
+                "Residences at Haven Apartments": {
+                    "rent": 234,
+                    "link": "https://www.residences-at-haven-apartments.com/"
+                }
+            },
+            {
+                "The Arcadia Suites": {
+                    "rent": 444,
+                    "link": "https://www.the-arcadia-suites.com/"
+                }
+            },
+            {
+                "Student Living Yugo Apartments": {
+                    "rent": 186,
+                    "link": "https://www.student-living-yugo-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Haven Residences": {
+                    "rent": 375,
+                    "link": "https://www.university-lodge-haven-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University College Dublin (UCD)": [
+            {
+                "Residences at Haven Student Housing": {
+                    "rent": 407,
+                    "link": "https://www.residences-at-haven-student-housing.com/"
+                }
+            },
+            {
+                "Student Living LIV Stay Apartments": {
+                    "rent": 251,
+                    "link": "https://www.student-living-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Student Housing": {
+                    "rent": 416,
+                    "link": "https://www.campus-suites-haven-student-housing.com/"
+                }
+            },
+            {
+                "Student Living LIV Stay Hall": {
+                    "rent": 275,
+                    "link": "https://www.student-living-liv-stay-hall.com/"
+                }
+            },
+            {
+                "The LIV Stay Student Housing": {
+                    "rent": 466,
+                    "link": "https://www.the-liv-stay-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "National University of Ireland, Galway (NUI Galway)": [
+            {
+                "University Lodge Yugo Apartments": {
+                    "rent": 276,
+                    "link": "https://www.university-lodge-yugo-apartments.com/"
+                }
+            },
+            {
+                "University Lodge River Suites": {
+                    "rent": 262,
+                    "link": "https://www.university-lodge-river-suites.com/"
+                }
+            },
+            {
+                "The River Suites": {
+                    "rent": 448,
+                    "link": "https://www.the-river-suites.com/"
+                }
+            },
+            {
+                "Urban Haven Apartments": {
+                    "rent": 438,
+                    "link": "https://www.urban-haven-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Hall": {
+                    "rent": 457,
+                    "link": "https://www.campus-suites-haven-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University College Cork (UCC)": [
+            {
+                "The River Flats": {
+                    "rent": 324,
+                    "link": "https://www.the-river-flats.com/"
+                }
+            },
+            {
+                "University Lodge River Hall": {
+                    "rent": 107,
+                    "link": "https://www.university-lodge-river-hall.com/"
+                }
+            },
+            {
+                "Urban Arcadia Flats": {
+                    "rent": 267,
+                    "link": "https://www.urban-arcadia-flats.com/"
+                }
+            },
+            {
+                "Student Living Yugo Flats": {
+                    "rent": 253,
+                    "link": "https://www.student-living-yugo-flats.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Hall": {
+                    "rent": 167,
+                    "link": "https://www.university-lodge-yugo-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Dublin City University (DCU)": [
+            {
+                "Urban Yugo Hall": {
+                    "rent": 207,
+                    "link": "https://www.urban-yugo-hall.com/"
+                }
+            },
+            {
+                "Urban Haven Flats": {
+                    "rent": 160,
+                    "link": "https://www.urban-haven-flats.com/"
+                }
+            },
+            {
+                "Urban River Suites": {
+                    "rent": 224,
+                    "link": "https://www.urban-river-suites.com/"
+                }
+            },
+            {
+                "Urban Yugo Residences": {
+                    "rent": 449,
+                    "link": "https://www.urban-yugo-residences.com/"
+                }
+            },
+            {
+                "Student Living Haven Flats": {
+                    "rent": 357,
+                    "link": "https://www.student-living-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Limerick (UL)": [
+            {
+                "University Lodge River Residences": {
+                    "rent": 152,
+                    "link": "https://www.university-lodge-river-residences.com/"
+                }
+            },
+            {
+                "Urban Yugo Hall": {
+                    "rent": 171,
+                    "link": "https://www.urban-yugo-hall.com/"
+                }
+            },
+            {
+                "The Haven Student Housing": {
+                    "rent": 158,
+                    "link": "https://www.the-haven-student-housing.com/"
+                }
+            },
+            {
+                "The Haven Residences": {
+                    "rent": 153,
+                    "link": "https://www.the-haven-residences.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Hall": {
+                    "rent": 101,
+                    "link": "https://www.university-lodge-arcadia-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Maynooth University": [
+            {
+                "University Lodge River Apartments": {
+                    "rent": 168,
+                    "link": "https://www.university-lodge-river-apartments.com/"
+                }
+            },
+            {
+                "Urban River Hall": {
+                    "rent": 252,
+                    "link": "https://www.urban-river-hall.com/"
+                }
+            },
+            {
+                "The LIV Stay Flats": {
+                    "rent": 175,
+                    "link": "https://www.the-liv-stay-flats.com/"
+                }
+            },
+            {
+                "Campus Suites River Hall": {
+                    "rent": 380,
+                    "link": "https://www.campus-suites-river-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Suites": {
+                    "rent": 127,
+                    "link": "https://www.campus-suites-haven-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Technological University Dublin (TU Dublin)": [
+            {
+                "The Yugo Hall": {
+                    "rent": 492,
+                    "link": "https://www.the-yugo-hall.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Apartments": {
+                    "rent": 313,
+                    "link": "https://www.campus-suites-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Suites": {
+                    "rent": 152,
+                    "link": "https://www.urban-liv-stay-suites.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Suites": {
+                    "rent": 270,
+                    "link": "https://www.university-lodge-yugo-suites.com/"
+                }
+            },
+            {
+                "Urban Haven Residences": {
+                    "rent": 268,
+                    "link": "https://www.urban-haven-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Royal College of Surgeons in Ireland (RCSI)": [
+            {
+                "The River Suites": {
+                    "rent": 427,
+                    "link": "https://www.the-river-suites.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Residences": {
+                    "rent": 448,
+                    "link": "https://www.student-living-arcadia-residences.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Apartments": {
+                    "rent": 424,
+                    "link": "https://www.campus-suites-arcadia-apartments.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Student Housing": {
+                    "rent": 344,
+                    "link": "https://www.student-living-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "Residences at Haven Hall": {
+                    "rent": 175,
+                    "link": "https://www.residences-at-haven-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Dublin Institute of Technology (now part of TU Dublin)": [
+            {
+                "Residences at Haven Student Housing": {
+                    "rent": 118,
+                    "link": "https://www.residences-at-haven-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Suites": {
+                    "rent": 451,
+                    "link": "https://www.campus-suites-yugo-suites.com/"
+                }
+            },
+            {
+                "Residences at Yugo Student Housing": {
+                    "rent": 192,
+                    "link": "https://www.residences-at-yugo-student-housing.com/"
+                }
+            },
+            {
+                "The Yugo Flats": {
+                    "rent": 393,
+                    "link": "https://www.the-yugo-flats.com/"
+                }
+            },
+            {
+                "The Haven Flats": {
+                    "rent": 119,
+                    "link": "https://www.the-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "National College of Ireland (NCI)": [
+            {
+                "Student Living LIV Stay Residences": {
+                    "rent": 362,
+                    "link": "https://www.student-living-liv-stay-residences.com/"
+                }
+            },
+            {
+                "Student Living Haven Student Housing": {
+                    "rent": 158,
+                    "link": "https://www.student-living-haven-student-housing.com/"
+                }
+            },
+            {
+                "Residences at LIV Stay Suites": {
+                    "rent": 237,
+                    "link": "https://www.residences-at-liv-stay-suites.com/"
+                }
+            },
+            {
+                "The Yugo Student Housing": {
+                    "rent": 325,
+                    "link": "https://www.the-yugo-student-housing.com/"
+                }
+            },
+            {
+                "The Haven Flats": {
+                    "rent": 447,
+                    "link": "https://www.the-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Griffith College Dublin": [
+            {
+                "University Lodge Haven Flats": {
+                    "rent": 265,
+                    "link": "https://www.university-lodge-haven-flats.com/"
+                }
+            },
+            {
+                "University Lodge River Hall": {
+                    "rent": 303,
+                    "link": "https://www.university-lodge-river-hall.com/"
+                }
+            },
+            {
+                "The Haven Student Housing": {
+                    "rent": 246,
+                    "link": "https://www.the-haven-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Student Housing": {
+                    "rent": 157,
+                    "link": "https://www.campus-suites-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "Student Living River Residences": {
+                    "rent": 311,
+                    "link": "https://www.student-living-river-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Institute of Technology, Carlow": [
+            {
+                "Urban LIV Stay Hall": {
+                    "rent": 169,
+                    "link": "https://www.urban-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Residences at Haven Suites": {
+                    "rent": 194,
+                    "link": "https://www.residences-at-haven-suites.com/"
+                }
+            },
+            {
+                "Residences at Yugo Flats": {
+                    "rent": 133,
+                    "link": "https://www.residences-at-yugo-flats.com/"
+                }
+            },
+            {
+                "Urban Haven Flats": {
+                    "rent": 353,
+                    "link": "https://www.urban-haven-flats.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Apartments": {
+                    "rent": 162,
+                    "link": "https://www.urban-liv-stay-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Waterford Institute of Technology (now part of Technological University of the South East)": [
+            {
+                "The Arcadia Flats": {
+                    "rent": 371,
+                    "link": "https://www.the-arcadia-flats.com/"
+                }
+            },
+            {
+                "Student Living River Suites": {
+                    "rent": 391,
+                    "link": "https://www.student-living-river-suites.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Residences": {
+                    "rent": 211,
+                    "link": "https://www.university-lodge-liv-stay-residences.com/"
+                }
+            },
+            {
+                "The Yugo Hall": {
+                    "rent": 356,
+                    "link": "https://www.the-yugo-hall.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Apartments": {
+                    "rent": 376,
+                    "link": "https://www.university-lodge-liv-stay-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Cork Institute of Technology (now part of Munster Technological University)": [
+            {
+                "Urban Yugo Residences": {
+                    "rent": 457,
+                    "link": "https://www.urban-yugo-residences.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Suites": {
+                    "rent": 192,
+                    "link": "https://www.campus-suites-arcadia-suites.com/"
+                }
+            },
+            {
+                "Campus Suites River Hall": {
+                    "rent": 499,
+                    "link": "https://www.campus-suites-river-hall.com/"
+                }
+            },
+            {
+                "Residences at Haven Flats": {
+                    "rent": 432,
+                    "link": "https://www.residences-at-haven-flats.com/"
+                }
+            },
+            {
+                "Residences at Yugo Hall": {
+                    "rent": 252,
+                    "link": "https://www.residences-at-yugo-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Limerick Institute of Technology (now part of Technological University of the Shannon: Midlands Midwest)": [
+            {
+                "Urban Yugo Student Housing": {
+                    "rent": 148,
+                    "link": "https://www.urban-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Urban Haven Suites": {
+                    "rent": 305,
+                    "link": "https://www.urban-haven-suites.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Hall": {
+                    "rent": 384,
+                    "link": "https://www.campus-suites-liv-stay-hall.com/"
+                }
+            },
+            {
+                "The River Residences": {
+                    "rent": 478,
+                    "link": "https://www.the-river-residences.com/"
+                }
+            },
+            {
+                "The LIV Stay Student Housing": {
+                    "rent": 290,
+                    "link": "https://www.the-liv-stay-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Dundalk Institute of Technology (DKIT)": [
+            {
+                "Urban Yugo Flats": {
+                    "rent": 141,
+                    "link": "https://www.urban-yugo-flats.com/"
+                }
+            },
+            {
+                "Student Living LIV Stay Student Housing": {
+                    "rent": 361,
+                    "link": "https://www.student-living-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "The Arcadia Apartments": {
+                    "rent": 164,
+                    "link": "https://www.the-arcadia-apartments.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Flats": {
+                    "rent": 355,
+                    "link": "https://www.university-lodge-liv-stay-flats.com/"
+                }
+            },
+            {
+                "Campus Suites River Student Housing": {
+                    "rent": 475,
+                    "link": "https://www.campus-suites-river-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Galway-Mayo Institute of Technology (now part of Atlantic Technological University)": [
+            {
+                "Student Living LIV Stay Suites": {
+                    "rent": 136,
+                    "link": "https://www.student-living-liv-stay-suites.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Student Housing": {
+                    "rent": 317,
+                    "link": "https://www.university-lodge-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "Residences at Yugo Residences": {
+                    "rent": 425,
+                    "link": "https://www.residences-at-yugo-residences.com/"
+                }
+            },
+            {
+                "Student Living Haven Student Housing": {
+                    "rent": 134,
+                    "link": "https://www.student-living-haven-student-housing.com/"
+                }
+            },
+            {
+                "Urban Haven Residences": {
+                    "rent": 368,
+                    "link": "https://www.urban-haven-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Athlone Institute of Technology (now part of Technological University of the Shannon: Midlands Midwest)": [
+            {
+                "Campus Suites Arcadia Flats": {
+                    "rent": 343,
+                    "link": "https://www.campus-suites-arcadia-flats.com/"
+                }
+            },
+            {
+                "University Lodge River Apartments": {
+                    "rent": 488,
+                    "link": "https://www.university-lodge-river-apartments.com/"
+                }
+            },
+            {
+                "The LIV Stay Student Housing": {
+                    "rent": 357,
+                    "link": "https://www.the-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge River Apartments": {
+                    "rent": 202,
+                    "link": "https://www.university-lodge-river-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Haven Student Housing": {
+                    "rent": 216,
+                    "link": "https://www.university-lodge-haven-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Oxford": [
+            {
+                "Urban Yugo Flats": {
+                    "rent": 453,
+                    "link": "https://www.urban-yugo-flats.com/"
+                }
+            },
+            {
+                "Residences at LIV Stay Apartments": {
+                    "rent": 480,
+                    "link": "https://www.residences-at-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "Residences at Yugo Hall": {
+                    "rent": 122,
+                    "link": "https://www.residences-at-yugo-hall.com/"
+                }
+            },
+            {
+                "Residences at Arcadia Hall": {
+                    "rent": 256,
+                    "link": "https://www.residences-at-arcadia-hall.com/"
+                }
+            },
+            {
+                "University Lodge Haven Flats": {
+                    "rent": 195,
+                    "link": "https://www.university-lodge-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Cambridge": [
+            {
+                "Student Living River Apartments": {
+                    "rent": 307,
+                    "link": "https://www.student-living-river-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Student Housing": {
+                    "rent": 400,
+                    "link": "https://www.campus-suites-haven-student-housing.com/"
+                }
+            },
+            {
+                "Urban Arcadia Student Housing": {
+                    "rent": 500,
+                    "link": "https://www.urban-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "The River Suites": {
+                    "rent": 339,
+                    "link": "https://www.the-river-suites.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Apartments": {
+                    "rent": 271,
+                    "link": "https://www.urban-liv-stay-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Imperial College London": [
+            {
+                "Student Living Yugo Suites": {
+                    "rent": 211,
+                    "link": "https://www.student-living-yugo-suites.com/"
+                }
+            },
+            {
+                "The Haven Suites": {
+                    "rent": 179,
+                    "link": "https://www.the-haven-suites.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Hall": {
+                    "rent": 212,
+                    "link": "https://www.university-lodge-arcadia-hall.com/"
+                }
+            },
+            {
+                "Residences at Arcadia Flats": {
+                    "rent": 435,
+                    "link": "https://www.residences-at-arcadia-flats.com/"
+                }
+            },
+            {
+                "The Haven Flats": {
+                    "rent": 111,
+                    "link": "https://www.the-haven-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "London School of Economics and Political Science (LSE)": [
+            {
+                "Residences at River Flats": {
+                    "rent": 418,
+                    "link": "https://www.residences-at-river-flats.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Student Housing": {
+                    "rent": 362,
+                    "link": "https://www.campus-suites-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Student Living River Suites": {
+                    "rent": 150,
+                    "link": "https://www.student-living-river-suites.com/"
+                }
+            },
+            {
+                "Campus Suites LIV Stay Student Housing": {
+                    "rent": 162,
+                    "link": "https://www.campus-suites-liv-stay-student-housing.com/"
+                }
+            },
+            {
+                "The LIV Stay Student Housing": {
+                    "rent": 187,
+                    "link": "https://www.the-liv-stay-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University College London (UCL)": [
+            {
+                "Residences at Yugo Suites": {
+                    "rent": 352,
+                    "link": "https://www.residences-at-yugo-suites.com/"
+                }
+            },
+            {
+                "The Arcadia Flats": {
+                    "rent": 417,
+                    "link": "https://www.the-arcadia-flats.com/"
+                }
+            },
+            {
+                "The River Apartments": {
+                    "rent": 134,
+                    "link": "https://www.the-river-apartments.com/"
+                }
+            },
+            {
+                "The Arcadia Suites": {
+                    "rent": 413,
+                    "link": "https://www.the-arcadia-suites.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Suites": {
+                    "rent": 381,
+                    "link": "https://www.university-lodge-arcadia-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Edinburgh": [
+            {
+                "Urban Haven Suites": {
+                    "rent": 103,
+                    "link": "https://www.urban-haven-suites.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Student Housing": {
+                    "rent": 310,
+                    "link": "https://www.student-living-arcadia-student-housing.com/"
+                }
+            },
+            {
+                "Student Living Yugo Apartments": {
+                    "rent": 229,
+                    "link": "https://www.student-living-yugo-apartments.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Residences": {
+                    "rent": 387,
+                    "link": "https://www.campus-suites-arcadia-residences.com/"
+                }
+            },
+            {
+                "Student Living LIV Stay Suites": {
+                    "rent": 497,
+                    "link": "https://www.student-living-liv-stay-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "King's College London": [
+            {
+                "Residences at Haven Apartments": {
+                    "rent": 395,
+                    "link": "https://www.residences-at-haven-apartments.com/"
+                }
+            },
+            {
+                "The River Suites": {
+                    "rent": 460,
+                    "link": "https://www.the-river-suites.com/"
+                }
+            },
+            {
+                "Student Living Haven Hall": {
+                    "rent": 131,
+                    "link": "https://www.student-living-haven-hall.com/"
+                }
+            },
+            {
+                "Urban River Suites": {
+                    "rent": 151,
+                    "link": "https://www.urban-river-suites.com/"
+                }
+            },
+            {
+                "Residences at Haven Apartments": {
+                    "rent": 238,
+                    "link": "https://www.residences-at-haven-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Bristol": [
+            {
+                "Student Living Arcadia Flats": {
+                    "rent": 304,
+                    "link": "https://www.student-living-arcadia-flats.com/"
+                }
+            },
+            {
+                "Student Living River Suites": {
+                    "rent": 360,
+                    "link": "https://www.student-living-river-suites.com/"
+                }
+            },
+            {
+                "Campus Suites Yugo Suites": {
+                    "rent": 161,
+                    "link": "https://www.campus-suites-yugo-suites.com/"
+                }
+            },
+            {
+                "Urban River Hall": {
+                    "rent": 375,
+                    "link": "https://www.urban-river-hall.com/"
+                }
+            },
+            {
+                "Urban Yugo Hall": {
+                    "rent": 487,
+                    "link": "https://www.urban-yugo-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Warwick": [
+            {
+                "Residences at Haven Residences": {
+                    "rent": 123,
+                    "link": "https://www.residences-at-haven-residences.com/"
+                }
+            },
+            {
+                "Residences at River Suites": {
+                    "rent": 297,
+                    "link": "https://www.residences-at-river-suites.com/"
+                }
+            },
+            {
+                "The River Flats": {
+                    "rent": 167,
+                    "link": "https://www.the-river-flats.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Residences": {
+                    "rent": 432,
+                    "link": "https://www.urban-liv-stay-residences.com/"
+                }
+            },
+            {
+                "The River Suites": {
+                    "rent": 167,
+                    "link": "https://www.the-river-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Glasgow": [
+            {
+                "Student Living Haven Flats": {
+                    "rent": 370,
+                    "link": "https://www.student-living-haven-flats.com/"
+                }
+            },
+            {
+                "Campus Suites River Suites": {
+                    "rent": 111,
+                    "link": "https://www.campus-suites-river-suites.com/"
+                }
+            },
+            {
+                "The LIV Stay Hall": {
+                    "rent": 452,
+                    "link": "https://www.the-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Urban Arcadia Hall": {
+                    "rent": 487,
+                    "link": "https://www.urban-arcadia-hall.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Flats": {
+                    "rent": 158,
+                    "link": "https://www.student-living-arcadia-flats.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Birmingham": [
+            {
+                "Residences at River Residences": {
+                    "rent": 235,
+                    "link": "https://www.residences-at-river-residences.com/"
+                }
+            },
+            {
+                "Campus Suites River Suites": {
+                    "rent": 374,
+                    "link": "https://www.campus-suites-river-suites.com/"
+                }
+            },
+            {
+                "Urban Haven Flats": {
+                    "rent": 149,
+                    "link": "https://www.urban-haven-flats.com/"
+                }
+            },
+            {
+                "The Yugo Flats": {
+                    "rent": 179,
+                    "link": "https://www.the-yugo-flats.com/"
+                }
+            },
+            {
+                "Urban Haven Hall": {
+                    "rent": 355,
+                    "link": "https://www.urban-haven-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Leeds": [
+            {
+                "Student Living LIV Stay Hall": {
+                    "rent": 491,
+                    "link": "https://www.student-living-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Student Housing": {
+                    "rent": 330,
+                    "link": "https://www.campus-suites-haven-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Suites": {
+                    "rent": 164,
+                    "link": "https://www.university-lodge-arcadia-suites.com/"
+                }
+            },
+            {
+                "Student Living Haven Suites": {
+                    "rent": 277,
+                    "link": "https://www.student-living-haven-suites.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Apartments": {
+                    "rent": 411,
+                    "link": "https://www.university-lodge-arcadia-apartments.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Sheffield": [
+            {
+                "The Yugo Hall": {
+                    "rent": 369,
+                    "link": "https://www.the-yugo-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Flats": {
+                    "rent": 343,
+                    "link": "https://www.campus-suites-arcadia-flats.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Flats": {
+                    "rent": 141,
+                    "link": "https://www.campus-suites-arcadia-flats.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Residences": {
+                    "rent": 351,
+                    "link": "https://www.campus-suites-arcadia-residences.com/"
+                }
+            },
+            {
+                "Campus Suites River Residences": {
+                    "rent": 473,
+                    "link": "https://www.campus-suites-river-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Nottingham": [
+            {
+                "University Lodge River Student Housing": {
+                    "rent": 299,
+                    "link": "https://www.university-lodge-river-student-housing.com/"
+                }
+            },
+            {
+                "Campus Suites Haven Apartments": {
+                    "rent": 161,
+                    "link": "https://www.campus-suites-haven-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Apartments": {
+                    "rent": 213,
+                    "link": "https://www.university-lodge-yugo-apartments.com/"
+                }
+            },
+            {
+                "Residences at River Apartments": {
+                    "rent": 485,
+                    "link": "https://www.residences-at-river-apartments.com/"
+                }
+            },
+            {
+                "Urban Yugo Student Housing": {
+                    "rent": 228,
+                    "link": "https://www.urban-yugo-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of St Andrews": [
+            {
+                "Residences at River Hall": {
+                    "rent": 352,
+                    "link": "https://www.residences-at-river-hall.com/"
+                }
+            },
+            {
+                "University Lodge River Flats": {
+                    "rent": 263,
+                    "link": "https://www.university-lodge-river-flats.com/"
+                }
+            },
+            {
+                "Urban LIV Stay Suites": {
+                    "rent": 206,
+                    "link": "https://www.urban-liv-stay-suites.com/"
+                }
+            },
+            {
+                "Residences at Yugo Student Housing": {
+                    "rent": 390,
+                    "link": "https://www.residences-at-yugo-student-housing.com/"
+                }
+            },
+            {
+                "The River Residences": {
+                    "rent": 225,
+                    "link": "https://www.the-river-residences.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of Southampton": [
+            {
+                "The Arcadia Flats": {
+                    "rent": 455,
+                    "link": "https://www.the-arcadia-flats.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Residences": {
+                    "rent": 335,
+                    "link": "https://www.university-lodge-arcadia-residences.com/"
+                }
+            },
+            {
+                "University Lodge Haven Flats": {
+                    "rent": 151,
+                    "link": "https://www.university-lodge-haven-flats.com/"
+                }
+            },
+            {
+                "University Lodge Arcadia Flats": {
+                    "rent": 243,
+                    "link": "https://www.university-lodge-arcadia-flats.com/"
+                }
+            },
+            {
+                "The River Hall": {
+                    "rent": 187,
+                    "link": "https://www.the-river-hall.com/"
+                }
+            }
+        ]
+    },
+    {
+        "University of York": [
+            {
+                "Student Living Haven Student Housing": {
+                    "rent": 460,
+                    "link": "https://www.student-living-haven-student-housing.com/"
+                }
+            },
+            {
+                "The Haven Student Housing": {
+                    "rent": 212,
+                    "link": "https://www.the-haven-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge Haven Apartments": {
+                    "rent": 121,
+                    "link": "https://www.university-lodge-haven-apartments.com/"
+                }
+            },
+            {
+                "University Lodge River Residences": {
+                    "rent": 312,
+                    "link": "https://www.university-lodge-river-residences.com/"
+                }
+            },
+            {
+                "Urban Yugo Suites": {
+                    "rent": 103,
+                    "link": "https://www.urban-yugo-suites.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Durham University": [
+            {
+                "Urban Yugo Student Housing": {
+                    "rent": 272,
+                    "link": "https://www.urban-yugo-student-housing.com/"
+                }
+            },
+            {
+                "Student Living Arcadia Suites": {
+                    "rent": 144,
+                    "link": "https://www.student-living-arcadia-suites.com/"
+                }
+            },
+            {
+                "Urban Yugo Student Housing": {
+                    "rent": 383,
+                    "link": "https://www.urban-yugo-student-housing.com/"
+                }
+            },
+            {
+                "University Lodge Haven Residences": {
+                    "rent": 379,
+                    "link": "https://www.university-lodge-haven-residences.com/"
+                }
+            },
+            {
+                "Urban Haven Student Housing": {
+                    "rent": 431,
+                    "link": "https://www.urban-haven-student-housing.com/"
+                }
+            }
+        ]
+    },
+    {
+        "Queen Mary University of London": [
+            {
+                "Urban Haven Student Housing": {
+                    "rent": 396,
+                    "link": "https://www.urban-haven-student-housing.com/"
+                }
+            },
+            {
+                "Student Living LIV Stay Apartments": {
+                    "rent": 142,
+                    "link": "https://www.student-living-liv-stay-apartments.com/"
+                }
+            },
+            {
+                "University Lodge Yugo Flats": {
+                    "rent": 163,
+                    "link": "https://www.university-lodge-yugo-flats.com/"
+                }
+            },
+            {
+                "University Lodge LIV Stay Hall": {
+                    "rent": 179,
+                    "link": "https://www.university-lodge-liv-stay-hall.com/"
+                }
+            },
+            {
+                "Campus Suites Arcadia Student Housing": {
+                    "rent": 333,
+                    "link": "https://www.campus-suites-arcadia-student-housing.com/"
+                }
+            }
+        ]
+    }
+]
