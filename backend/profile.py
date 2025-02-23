@@ -64,6 +64,7 @@ class ProfileBuilder:
         2. Ask follow-up questions when answers are unclear.
         3. Once you have all the information, return it as JSON.
         4. Don't ask for all information at once - have a natural conversation.
+        5. Test scores refers to ACT, SAT, IELTS and TOEFL while academic score refers to a percentage or GPA value from high school
 
         Current profile state:
         {json.dumps(self.profile, indent=4)}
