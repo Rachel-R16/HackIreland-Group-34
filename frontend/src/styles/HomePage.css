@@ -1,5 +1,9 @@
 /* HomePage.css */
-.home-container {
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+  .home-container {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -30,9 +34,8 @@
   
   .main-heading {
     position: absolute;
-    top: 30%;
+    top: 20%;
     font-size: 5rem;
-    font-weight: bold;
     color: white;
     text-align: center;
     width: 100%;
@@ -51,7 +54,18 @@
     flex-wrap: nowrap; /* Prevent buttons from stacking */
     max-width: 800px; /* Prevent container from becoming too wide */
   }
-      
+
+  .find-everything-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust spacing */
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 53%; /* Ensure container is wide enough */
+  }
+
   .large-button {
     padding: 15px 30px;
     font-size: 1.2rem;

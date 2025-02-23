@@ -8,7 +8,7 @@ const HomePage = () => {
     <div className="home-container" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="logo-title-container">
         <img src={logoImage} alt="Logo" className="logo" />
-        <h1 className="title">StudentHive</h1>
+        <h1 className="title">GradPathways</h1>
       </div>
       <h2 className="main-heading">FIND EVERYTHING</h2>
       <div className="button-container">
@@ -16,7 +16,11 @@ const HomePage = () => {
         <button className="large-button">FIND UNIVERSITIES</button>
         <button className="large-button">FIND ACCOMMODATION</button>
       </div>
-      <button className="large-button" style={{ top: "75%" }}>FIND EVERYTHING</button>
+
+      <div className="find-everything-container">
+        <button className="large-button find-everything-button">FIND EVERYTHING</button>
+      </div>
+
     </div>
   );
 };
