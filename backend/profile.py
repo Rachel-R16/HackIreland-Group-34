@@ -1,6 +1,6 @@
 import os
 import openai
-from typing import Dict, Optional
+from typing import Dict
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -11,10 +11,13 @@ client = openai.OpenAI(api_key=OPENAI_API_KEY)
 SYSTEM_PROMPT = '''You are a friendly educational advisor helping students plan their studies abroad. Have a natural conversation to gather the following information:
 
 Required information to collect:
-- Academic score (GPA or test scores)
+- Academic score (Final high school percentage or equivalent)
 - Preferred countries for study
 - Areas of academic interest
 - Budget range per year (min-max in USD)
+- Nationality (to determine fee structures for international vs domestic students)
+- Standardized tests taken (e.g., SAT, ACT, IELTS, TOEFL)
+- Interest in scholarship opportunities (yes/no)
 
 Guidelines:
 1. Be conversational and friendly
@@ -32,7 +35,10 @@ Return ONLY JSON when you have all information. Format:
         "academic_score": value,
         "preferred_countries": ["country1", "country2"],
         "areas_of_interest": ["area1", "area2"],
-        "budget_range": {{"min": value, "max": value}}
+        "budget_range": {{"min": value, "max": value}},
+        "nationality": "country_name",
+        "tests_taken": ["SAT", "ACT", "IELTS", "TOEFL"],
+        "scholarship_interest": true/false
     }}
 }}
 
@@ -48,9 +54,12 @@ class ProfileBuilder:
             "academic_score": None,
             "preferred_countries": None,
             "areas_of_interest": None,
-            "budget_range": None
+            "budget_range": None,
+            "nationality": None,
+            "tests_taken": None,
+            "scholarship_interest": None
         }
-        
+                
     def process_conversation(self, conversation: list[str]) -> Dict:
         formatted_prompt = SYSTEM_PROMPT.format(profile=self.profile)
         
