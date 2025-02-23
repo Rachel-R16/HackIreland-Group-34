@@ -19,7 +19,7 @@ export default function SelectionPage() {
                 'discover-more': 'general'
             };
 
-            const response = await fetch("http://localhost:5001/start-conversation", {
+            const response = await fetch("http://localhost:5000/start-conversation", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ 

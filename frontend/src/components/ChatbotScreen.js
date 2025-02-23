@@ -40,7 +40,7 @@ export default function ChatbotScreen() {
                     'discover-more': 'general'
                 };
 
-                const response = await fetch("http://localhost:5001/start-conversation", {
+                const response = await fetch("http://localhost:5000/start-conversation", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ 
@@ -87,7 +87,7 @@ export default function ChatbotScreen() {
             try {
                 console.log("📤 Sending user input:", { session_id: sessionId, message: userMessage });
 
-                const response = await fetch("http://localhost:5001/continue-conversation", {
+                const response = await fetch("http://localhost:5000/continue-conversation", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ session_id: sessionId, message: userMessage })
@@ -141,7 +141,7 @@ export default function ChatbotScreen() {
         console.log("📤 Sending profile data to recommend API:", JSON.stringify(formattedProfile, null, 2));
 
         try {
-            const recommendationResponse = await fetch("http://localhost:5001/recommend", {
+            const recommendationResponse = await fetch("http://localhost:5000/recommend", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formattedProfile)
